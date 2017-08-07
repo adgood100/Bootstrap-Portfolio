@@ -8,83 +8,83 @@
 		<title>About | Alicia Good</title>
 
 		<!-- Bootstrap -->
-		<!--    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-		<!-- Latest compiled and minified CSS 
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-		<!-- Latest compiled and minified JavaScript 
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		-->
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+
 	</head>
 	<body>
 
-	<div class="container">
-		<div class="row">
-			<nav class="navbar navbar-default">
-	<!--			<div class="container"> -->
-					
-					<div class="navbar-header">         
-						<a id="logo" class="navbar-brand" href="#">Alicia Good</a>       
-					</div>
-					<div id="navbar" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="../navbar-static-top/">About</a></li>
-							<li><a href="../navbar-static-top/">Portfolio</a></li>
-							<li><a href="../navbar-fixed-top/">Contact</a></li>
-						</ul>
-					</div>
-					<!--/.nav-collapse -->  
-				
-	<!--			</div> -->
-			<!--/.container-fluid -->   
-			</nav>
-		</div>
-		<div class="row col-md-9 col-md-offset-1 main-section">
-			<div class="col-md-9">
-
-				<div class="pull-left">
-					<h3 class="text-foo">About Me</h3>
-					<hr>
-					<img class="img-responsive" src="assets/images/good-alicia.jpg" alt="Alicia Good" hspace="20" vspace="20"> 
-					
-					<p>"Every day is different. That's what I love about my job." </p>
-					<p>
-					As a pre-sales solutions consultant I get to work with a wide range of new and potential clients tackling some extraordinary challenges.
-					</p>
-					<p>
-					It's been a good day when I shut my laptop and turn off the lights knowing I’ve helped to solve problems and set in motion far reaching solutions that save money and grow revenues. 
-					</p>					
-					<p>
-					Work under pressure? Yes please. It's the fuel that feeds my engine.  You better love the pressure when its your job to evangelize marketing solutions that drive traffic, create engaging experiences, and convert customers. 
-					</p>
+	<header id="masthead navbar navbar-default">
+		<div class="container">
+<!---- -->		
+			<nav class="navbar navbar">
+			  <div class="container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				  </button>
+				  <a class="navbar-brand" href="#">Alicia Good</a>
 				</div>
-			</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+					  <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">About <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Contact</a></li>
+					  </ul>
+					</li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+<!---- -->		
+		</div>
+	</header>
+		  <div id="main-container" class="row container">
+			<section class="main-section">
+				<h1>About Me</h1>
+
+				<img src="assets/images/good-alicia.jpg" class="auth-image" alt="Alicia Good">
+
+				<p>"Every day is different. That's what I love about my job." As a pre-sales solutions consultant I get to work with a wide range of new and potential clients tackling some extraordinary challenges.</p>
+							
+				<p>It's been a good day when I shut my laptop and turn off the lights knowing I’ve helped to solve problems and set in motion far reaching solutions that save money and grow revenues.</p>
+									
+				<p>Work under pressure? Yes please. It's the fuel that feeds my engine.  You better love the pressure when its your job to evangelize marketing solutions that drive traffic, create engaging experiences, and convert customers.</p> 
+
+			  
+			</section>
 			
-			<div class="col-md-3 social">       
-				
-				<div class="section-inline-block">             
-					<div class="align-middle side-bar"> 
-						<h3 class="text-foo">Connect with Me</h3>
-						<hr>
-						<img class="img-responsive pull-left" src="assets/images/github-128.png" alt="github" width="48" height="48">               
-						<img class="img-responsive pull-left" src="assets/images/linkedin-128.png" alt="LinkedIn" hspace="10" width="48" height="48">               
-						<img class="img-responsive pull-left" src="assets/images/stackoverflow-128.png" alt="Stackoverflow" width="48" height="48">             
-					</div>           
-				</div>         
-			</div>
+			<section class="social sidebar pull-right">
+			  <div id="connect">
+					<h2>Connect with Me</h2>
+
+					<a href="https://github.com/adgood100"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+					<a href="https://www.linkedin.com/in/goodalicia/"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+					<a href="https://stackexchange.com/users/11300816/alicia?tab=top"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+
+			  </div>
+			</section>
 		</div>
 
-	<!--</div>	-->	
-	<!--</div> -->
 	<footer>
 		<div class="panel panel-default">
-			<div class="panel-footer col-md-8 col-md-offset-2">
-				<p class="text-center" vspace="30">Copyright &copy; GoodWorx.com</p>
+			<div class="panel-footer container">
+				Copyright &copy; 2017 GoodWorx
 			</div>
 		</div>	
 	</footer>
